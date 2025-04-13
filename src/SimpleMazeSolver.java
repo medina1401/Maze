@@ -53,6 +53,15 @@ public class SimpleMazeSolver {
         return false;
     }
 
+    static void printMaze() {
+        for (int i = 0; i < ROWS; i++) {
+            for (int j = 0; j < COLS; j++) {
+                System.out.print(maze[i][j]);
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         createMaze();
         generateMaze(1, 1);
