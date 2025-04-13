@@ -71,6 +71,10 @@ public class SimpleMazeSolver {
 
         System.out.println("Generated Maze:");
         printMaze();
+
+        System.out.println("\nSolved Maze:");
+        solveMaze(1, 1);
+        printMaze();
     }
 }
 
