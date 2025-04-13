@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class SimpleMazeSolver {
 
@@ -20,8 +20,27 @@ public class SimpleMazeSolver {
         }
     }
 
+    static void generateMaze(int x, int y) {
+        maze[x][y] = PATH;
+
+        int[][] directions = { {0, 2}, {2, 0}, {0, -2}, {-2, 0} };
+        List<int[]> dirList = Arrays.asList(directions);
+        Collections.shuffle(dirList);
+
+        for (int[] dir : dirList) {
+            int dx = dir[0], dy = dir[1];
+            int nx = x + dx, ny = y + dy;
+
+            if (nx > 0 && ny > 0 && nx < ROWS - 1 && ny < COLS - 1 && maze[nx][ny] == WALL) {
+                maze[x + dx / 2][y + dy / 2] = PATH;
+                generateMaze(nx, ny);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         createMaze();
+        generateMaze(1, 1);
     }
 }
 
