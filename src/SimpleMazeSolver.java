@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class SimpleMazeSolver {
 
     static final char WALL = '#';
@@ -12,7 +14,14 @@ public class SimpleMazeSolver {
     static char[][] maze = new char[ROWS][COLS];
     static boolean[][] visited = new boolean[ROWS][COLS];
 
+    static void createMaze() {
+        for (int i = 0; i < ROWS; i++) {
+            Arrays.fill(maze[i], WALL);
+        }
+    }
+
     public static void main(String[] args) {
-        // TODO
+        createMaze();
     }
 }
+
