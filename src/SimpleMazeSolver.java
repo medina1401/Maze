@@ -41,6 +41,9 @@ public class SimpleMazeSolver {
     public static void main(String[] args) {
         createMaze();
         generateMaze(1, 1);
+
+        maze[1][1] = START;
+        maze[ROWS - 2][COLS - 2] = EXIT;
     }
 }
 
