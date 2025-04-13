@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7877ca75-78a9-4d91-8265-a53380009bc8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MazeSolver/MazeSolver.java" afterDir="false" />
+    <list default="true" id="7877ca75-78a9-4d91-8265-a53380009bc8" name="Changes" comment="Called solveMaze and printed the solved maze">
+      <change beforePath="$PROJECT_DIR$/src/SimpleMazeSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleMazeSolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "medina1401"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/medina1401/Maze.git",
+    "accountId": "38a2afa7-cc9c-4603-a66b-5f8ac16987ec"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 8
@@ -26,6 +39,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.SimpleMazeSolver.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -41,6 +55,93 @@
       <option name="presentableId" value="Default" />
       <updated>1744541663615</updated>
     </task>
+    <task id="LOCAL-00001" summary="Created project structure and defined basic constants">
+      <option name="closed" value="true" />
+      <created>1744541740653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744541740653</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Implemented createMaze to initialize maze with walls">
+      <option name="closed" value="true" />
+      <created>1744541904619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744541904619</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added recursive generateMaze method to carve paths">
+      <option name="closed" value="true" />
+      <created>1744542033901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744542033901</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added logic to place START and EXIT points in the maze">
+      <option name="closed" value="true" />
+      <created>1744542290674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744542290674</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Implemented solveMaze for pathfinding from S to E">
+      <option name="closed" value="true" />
+      <created>1744542552401</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744542552401</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added printMaze method to display the maze in console">
+      <option name="closed" value="true" />
+      <created>1744542658634</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744542658634</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Printed the generated maze before solving">
+      <option name="closed" value="true" />
+      <created>1744542739254</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744542739254</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Called solveMaze and printed the solved maze">
+      <option name="closed" value="true" />
+      <created>1744542808275</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744542808275</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created project structure and defined basic constants" />
+    <MESSAGE value="Implemented createMaze to initialize maze with walls" />
+    <MESSAGE value="Added recursive generateMaze method to carve paths" />
+    <MESSAGE value="Added logic to place START and EXIT points in the maze" />
+    <MESSAGE value="Implemented solveMaze for pathfinding from S to E" />
+    <MESSAGE value="Added printMaze method to display the maze in console" />
+    <MESSAGE value="Printed the generated maze before solving" />
+    <MESSAGE value="Called solveMaze and printed the solved maze" />
+    <option name="LAST_COMMIT_MESSAGE" value="Called solveMaze and printed the solved maze" />
   </component>
 </project>
