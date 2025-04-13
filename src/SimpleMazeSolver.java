@@ -38,6 +38,21 @@ public class SimpleMazeSolver {
         }
     }
 
+    static boolean solveMaze(int x, int y) {
+        if (x < 0 || y < 0 || x >= ROWS || y >= COLS) return false;
+        if (maze[x][y] == WALL || visited[x][y]) return false;
+        if (maze[x][y] == EXIT) return true;
+
+        visited[x][y] = true;
+
+        if (solveMaze(x + 1, y) || solveMaze(x - 1, y) || solveMaze(x, y + 1) || solveMaze(x, y - 1)) {
+            if (maze[x][y] != START) maze[x][y] = VISITED;
+            return true;
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         createMaze();
         generateMaze(1, 1);
