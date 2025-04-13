@@ -68,6 +68,9 @@ public class SimpleMazeSolver {
 
         maze[1][1] = START;
         maze[ROWS - 2][COLS - 2] = EXIT;
+
+        System.out.println("Generated Maze:");
+        printMaze();
     }
 }
 
